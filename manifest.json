@@ -2,7 +2,6 @@
   "name": "Sequenciador de Cores",
   "short_name": "Seq Cores",
   "start_url": "/jogo-memoria-selector-visual/",
-  "scope": "/jogo-memoria-selector-visual/",
   "display": "standalone",
   "background_color": "#111111",
   "theme_color": "#111111",
@@ -17,5 +16,6 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "scope": "/jogo-memoria-selector-visual/"
 }
