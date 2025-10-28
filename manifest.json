@@ -1,7 +1,8 @@
 {
   "name": "Sequenciador de Cores",
   "short_name": "Seq Cores",
-  "start_url": "./index.html",
+  "start_url": "/jogo-memoria-selector-visual/",
+  "scope": "/jogo-memoria-selector-visual/",
   "display": "standalone",
   "background_color": "#111111",
   "theme_color": "#111111",
