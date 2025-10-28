@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sequenciador de Cores</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js");
+      });
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Sequenciador de Cores</h1>
+
+    <div id="phase-selector">
+      <label for="phase">Fase:</label>
+      <select id="phase">
+        <option value="none">Nenhuma</option>
+        <option value="1">Fase 1</option>
+        <option value="2">Fase 2</option>
+        <option value="3">Fase 3</option>
+        <option value="4">Fase 4</option>
+      </select>
+    </div>
+
+    <div id="color-row">
+      <button class="color red" data-color="red"></button>
+      <button class="color green" data-color="green"></button>
+      <button class="color blue" data-color="blue"></button>
+      <button class="color yellow" data-color="yellow"></button>
+    </div>
+
+    <div class="controls">
+      <button id="undo">Apagar Último</button>
+      <button id="clear">Limpar Tudo</button>
+    </div>
+
+    <div id="sequence"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
